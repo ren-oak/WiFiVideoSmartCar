@@ -1,0 +1,49 @@
+10
+
+dir
+1
+svn://localhost/smartcar/smartcar/smart%20car.xcodeproj/project.xcworkspace/xcuserdata
+svn://localhost/smartcar
+delete
+
+
+2013-05-17T14:50:34.092253Z
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+421691cd-1923-42a0-a613-0dd9b02800c5
+
+apple.xcuserdatad
+dir
+
+
+
+delete
+
+guanxijing.xcuserdatad
+dir
+
+
+
+delete
+
+jray.xcuserdatad
+dir
+
+
+
+delete
+

@@ -1,0 +1,220 @@
+//
+//  ViewController.m
+//  Disconnected
+//
+
+
+#import "ViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+
+extern char laststate,nextstate;
+extern AppDelegate *sysdgt;
+
+
+@implementation ViewController
+
+@synthesize colorChoice;
+@synthesize chosenColor;
+@synthesize flowerView;
+
+
+-(IBAction)getFlower:(id)sender {
+	NSString *outputHTML;
+	NSString *color;
+	NSString *colorVal;
+	int colorNum;
+	colorNum=colorChoice.selectedSegmentIndex;
+	switch (colorNum) {
+		case 0:
+			color=@"Red";
+			colorVal=@"red";
+			break;
+		case 1:
+			color=@"Blue";
+			colorVal=@"blue";
+			break;
+		case 2:
+			color=@"Yellow";
+			colorVal=@"yellow";
+			break;
+		case 3:
+			color=@"Green";
+			colorVal=@"green";
+			break;
+	}
+	chosenColor.text=[[NSString alloc] initWithFormat:@"%@",color];
+
+}
+
+- (IBAction)quitback:(id)sender {
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    laststate=nextstate=0;
+    UIStoryboard *mainstory=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    ViewController *homeview=[mainstory instantiateViewControllerWithIdentifier:@"homeview"];
+    homeview.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
+    homeview.modalPresentationStyle=UIModalPresentationFormSheet;
+    
+    [self presentViewController:homeview animated:YES completion:nil];
+    
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Release any cached data, images, etc that aren't in use.
+}
+
+
+SystemSoundID soundID;
+-(void)passradiovalue:(float *)radio
+{
+    int i;
+    NSLog(@"this is deleget%f",radio[0]);
+   /* NSURL *filePath=[[NSBundle mainBundle] URLForResource:@"pageflip" withExtension: @"aif"];
+    AudioServicesCreateSystemSoundID((CFURLRef)filePath, &soundID);
+    AudioServicesPlaySystemSound(soundID);*/
+  
+   // AudioServicesPlaySystemSound(1500);
+
+}
+
+
+
+
+
+#pragma mark - View lifecycle
+
+
+- (void)loadwebview
+{
+    NSString *outputHTML;
+   	// Do any additional setup after loading the view, typically from a nib.
+    
+    outputHTML=[[NSString alloc] initWithFormat:@"<body style='margin: 0px; padding: 0px'><img width='1200' height='800' src='http://192.168.10.1:8000/?action=stream'></body>"];
+
+    [flowerView loadHTMLString:outputHTML baseURL:nil];
+    
+    
+   /* NSString *HTMLData = @"<body style='margin: 0px; padding: 0px'><img width='1200' height='800' src='http://192.168.10.1:8080/?action=stream'></body>";
+    flowerView.scalesPageToFit = YES;
+    [flowerView loadHTMLString:HTMLData baseURL:[NSURL fileURLWithPath: [[NSBundle mainBundle]  bundlePath]]];*/
+    
+    
+    /*NSURL *urlBai=[NSURL URLWithString:@"http://www.baidu.com"];
+    NSURLRequest *request=[NSURLRequest requestWithURL:urlBai];
+    flowerView.scalesPageToFit = YES;
+    [flowerView loadRequest:request];*/
+
+    
+}
+
+
+
+
+
+
+
+int connect_check(int port);
+
+
+- (void)viewDidLoad
+{
+	 [super viewDidLoad];	
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    if(!connect_check(8000))
+        [self loadwebview];
+      
+    sysdgt.radiodgt=self;//step radio delegte
+    
+
+  
+}
+
+
+
+
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"Loader Error!");
+    [self loadtestview];
+}
+
+
+static NSTimer *timer;
+int timeout=0;
+-(void)timeoutprocess{
+    NSLog(@"timeout");
+    [self loadtestview];
+    [timer invalidate];
+
+    timeout=1;
+}
+
+-(void)webViewDidStartLoad:(UIWebView*)webView{
+    
+    NSLog(@"DidStartLoad");
+   /* timer=[NSTimer scheduledTimerWithTimeInterval:1
+                                           target:self
+                                         selector:@selector(timeoutprocess)
+                                         userInfo:nil
+                                          repeats:NO];*/
+    
+    timeout=0;
+    
+    
+}
+-(void)webViewDidFinishLoad:(UIWebView*)webView {
+   
+        NSLog(@"DidFinish");
+    
+     /*   if(!timeout){
+            [timer invalidate];
+        }*/
+
+
+       [self loadwebview];
+
+
+}
+
+- (void)viewDidUnload
+{
+    [self setflowerView:nil];
+    [self setChosenColor:nil];
+    [self setColorChoice:nil];
+
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+@end

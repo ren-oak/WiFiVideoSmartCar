@@ -1,0 +1,26 @@
+//
+//  ViewController.h
+//  Disconnected
+//
+
+
+#import <UIKit/UIKit.h>
+#import "AsyncUdpSocket.h"
+#import "radiodelegate.h"
+#import "AppDelegate.h"
+
+@interface ViewController : UIViewController < radiodelegate >{
+    UIWebView *servertest;
+}
+
+@property (strong, nonatomic) IBOutlet UISegmentedControl *colorChoice;
+@property (strong, nonatomic) IBOutlet UIWebView *flowerView;
+@property (strong, nonatomic) IBOutlet UILabel *chosenColor;
+
+-(IBAction)getFlower:(id)sender;
+-(IBAction)quitback:(id)sender;
+
+@end
+
+
+

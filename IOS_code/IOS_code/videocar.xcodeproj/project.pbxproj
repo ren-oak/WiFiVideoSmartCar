@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180E2786171ADF880062D405 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E2785171ADF880062D405 /* AsyncUdpSocket.m */; };
+		18369D37171D374C007B222E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18369D36171D374C007B222E /* AudioToolbox.framework */; };
+		188805301719105F0069946F /* carlog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1888052C1719105F0069946F /* carlog.png */; };
+		188805311719105F0069946F /* tirebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1888052D1719105F0069946F /* tirebar.png */; };
+		188805321719105F0069946F /* warm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1888052E1719105F0069946F /* warm.png */; };
+		18880537171913010069946F /* carlog.png in Resources */ = {isa = PBXBuildFile; fileRef = 18880536171913010069946F /* carlog.png */; };
+		188D2D28171EB85D004A74B7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D2D27171EB85D004A74B7 /* back.png */; };
+		189397F6175ABE7F00C338BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189397F5175ABE7F00C338BC /* Default-568h@2x.png */; };
+		189397F8175AD5B200C338BC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189397F7175AD5B200C338BC /* CoreMotion.framework */; };
+		18C58D2D175B13250013FA16 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C58D2A175B13250013FA16 /* off.png */; };
+		18C58D2E175B13250013FA16 /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C58D2B175B13250013FA16 /* on.png */; };
+		18C58D2F175B13250013FA16 /* speakeroff.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C58D2C175B13250013FA16 /* speakeroff.png */; };
+		18C58D31175B24E70013FA16 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 18C58D30175B24E60013FA16 /* udp.c */; };
+		27C5A81813F8A3E800AFB80C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5A81713F8A3E800AFB80C /* UIKit.framework */; };
+		27C5A81A13F8A3E800AFB80C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5A81913F8A3E800AFB80C /* Foundation.framework */; };
+		27C5A82013F8A3E800AFB80C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27C5A81E13F8A3E800AFB80C /* InfoPlist.strings */; };
+		27C5A82213F8A3E800AFB80C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5A82113F8A3E800AFB80C /* main.m */; };
+		27C5A82613F8A3E800AFB80C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5A82513F8A3E800AFB80C /* AppDelegate.m */; };
+		27C5A82913F8A3E800AFB80C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27C5A82713F8A3E800AFB80C /* MainStoryboard.storyboard */; };
+		27C5A82C13F8A3E800AFB80C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5A82B13F8A3E800AFB80C /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180E2784171ADF880062D405 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		180E2785171ADF880062D405 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		18369D36171D374C007B222E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1888052C1719105F0069946F /* carlog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carlog.png; sourceTree = "<group>"; };
+		1888052D1719105F0069946F /* tirebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tirebar.png; sourceTree = "<group>"; };
+		1888052E1719105F0069946F /* warm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warm.png; sourceTree = "<group>"; };
+		18880536171913010069946F /* carlog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carlog.png; path = ../carlog.png; sourceTree = "<group>"; };
+		188D2D27171EB85D004A74B7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		189397F5175ABE7F00C338BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		189397F7175AD5B200C338BC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18C58D2A175B13250013FA16 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = SOURCE_ROOT; };
+		18C58D2B175B13250013FA16 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = SOURCE_ROOT; };
+		18C58D2C175B13250013FA16 /* speakeroff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakeroff.png; sourceTree = SOURCE_ROOT; };
+		18C58D30175B24E60013FA16 /* udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
+		27C5A81313F8A3E800AFB80C /* videocar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videocar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C5A81713F8A3E800AFB80C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27C5A81913F8A3E800AFB80C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27C5A81D13F8A3E800AFB80C /* videocar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "videocar-Info.plist"; sourceTree = "<group>"; };
+		27C5A81F13F8A3E800AFB80C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27C5A82113F8A3E800AFB80C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27C5A82313F8A3E800AFB80C /* videocar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "videocar-Prefix.pch"; sourceTree = "<group>"; };
+		27C5A82413F8A3E800AFB80C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27C5A82513F8A3E800AFB80C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27C5A82813F8A3E800AFB80C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		27C5A82A13F8A3E800AFB80C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27C5A82B13F8A3E800AFB80C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27C5A81013F8A3E800AFB80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189397F8175AD5B200C338BC /* CoreMotion.framework in Frameworks */,
+				18369D37171D374C007B222E /* AudioToolbox.framework in Frameworks */,
+				27C5A81813F8A3E800AFB80C /* UIKit.framework in Frameworks */,
+				27C5A81A13F8A3E800AFB80C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C5A80813F8A3E800AFB80C = {
+			isa = PBXGroup;
+			children = (
+				189397F7175AD5B200C338BC /* CoreMotion.framework */,
+				189397F5175ABE7F00C338BC /* Default-568h@2x.png */,
+				27C5A81B13F8A3E800AFB80C /* lianjie */,
+				27C5A81613F8A3E800AFB80C /* Frameworks */,
+				27C5A81413F8A3E800AFB80C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27C5A81413F8A3E800AFB80C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C5A81313F8A3E800AFB80C /* videocar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27C5A81613F8A3E800AFB80C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18369D36171D374C007B222E /* AudioToolbox.framework */,
+				27C5A81713F8A3E800AFB80C /* UIKit.framework */,
+				27C5A81913F8A3E800AFB80C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27C5A81B13F8A3E800AFB80C /* lianjie */ = {
+			isa = PBXGroup;
+			children = (
+				18C58D2A175B13250013FA16 /* off.png */,
+				18C58D30175B24E60013FA16 /* udp.c */,
+				18C58D2B175B13250013FA16 /* on.png */,
+				18C58D2C175B13250013FA16 /* speakeroff.png */,
+				188D2D27171EB85D004A74B7 /* back.png */,
+				18880536171913010069946F /* carlog.png */,
+				180E2784171ADF880062D405 /* AsyncUdpSocket.h */,
+				1888052C1719105F0069946F /* carlog.png */,
+				180E2785171ADF880062D405 /* AsyncUdpSocket.m */,
+				1888052D1719105F0069946F /* tirebar.png */,
+				1888052E1719105F0069946F /* warm.png */,
+				27C5A82413F8A3E800AFB80C /* AppDelegate.h */,
+				27C5A82513F8A3E800AFB80C /* AppDelegate.m */,
+				27C5A82713F8A3E800AFB80C /* MainStoryboard.storyboard */,
+				27C5A82A13F8A3E800AFB80C /* ViewController.h */,
+				27C5A82B13F8A3E800AFB80C /* ViewController.m */,
+				27C5A81C13F8A3E800AFB80C /* Supporting Files */,
+			);
+			name = lianjie;
+			path = Disconnected;
+			sourceTree = "<group>";
+		};
+		27C5A81C13F8A3E800AFB80C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C5A81D13F8A3E800AFB80C /* videocar-Info.plist */,
+				27C5A81E13F8A3E800AFB80C /* InfoPlist.strings */,
+				27C5A82113F8A3E800AFB80C /* main.m */,
+				27C5A82313F8A3E800AFB80C /* videocar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27C5A81213F8A3E800AFB80C /* videocar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C5A82F13F8A3E800AFB80C /* Build configuration list for PBXNativeTarget "videocar" */;
+			buildPhases = (
+				27C5A80F13F8A3E800AFB80C /* Sources */,
+				27C5A81013F8A3E800AFB80C /* Frameworks */,
+				27C5A81113F8A3E800AFB80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = videocar;
+			productName = Disconnected;
+			productReference = 27C5A81313F8A3E800AFB80C /* videocar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27C5A80A13F8A3E800AFB80C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "John E. Ray";
+			};
+			buildConfigurationList = 27C5A80D13F8A3E800AFB80C /* Build configuration list for PBXProject "videocar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27C5A80813F8A3E800AFB80C;
+			productRefGroup = 27C5A81413F8A3E800AFB80C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27C5A81213F8A3E800AFB80C /* videocar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27C5A81113F8A3E800AFB80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C5A82013F8A3E800AFB80C /* InfoPlist.strings in Resources */,
+				27C5A82913F8A3E800AFB80C /* MainStoryboard.storyboard in Resources */,
+				188805301719105F0069946F /* carlog.png in Resources */,
+				188805311719105F0069946F /* tirebar.png in Resources */,
+				188805321719105F0069946F /* warm.png in Resources */,
+				18880537171913010069946F /* carlog.png in Resources */,
+				188D2D28171EB85D004A74B7 /* back.png in Resources */,
+				189397F6175ABE7F00C338BC /* Default-568h@2x.png in Resources */,
+				18C58D2D175B13250013FA16 /* off.png in Resources */,
+				18C58D2E175B13250013FA16 /* on.png in Resources */,
+				18C58D2F175B13250013FA16 /* speakeroff.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27C5A80F13F8A3E800AFB80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C5A82213F8A3E800AFB80C /* main.m in Sources */,
+				27C5A82613F8A3E800AFB80C /* AppDelegate.m in Sources */,
+				27C5A82C13F8A3E800AFB80C /* ViewController.m in Sources */,
+				180E2786171ADF880062D405 /* AsyncUdpSocket.m in Sources */,
+				18C58D31175B24E70013FA16 /* udp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27C5A81E13F8A3E800AFB80C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C5A81F13F8A3E800AFB80C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27C5A82713F8A3E800AFB80C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C5A82813F8A3E800AFB80C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27C5A82D13F8A3E800AFB80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27C5A82E13F8A3E800AFB80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27C5A83013F8A3E800AFB80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI TINGBIN (V5R8UKL5G2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI TINGBIN (V5R8UKL5G2)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Disconnected/videocar-Prefix.pch";
+				INFOPLIST_FILE = "Disconnected/videocar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = videocar;
+				PROVISIONING_PROFILE = "569AB77A-DBB8-490B-A800-FE100CBBFBF3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "569AB77A-DBB8-490B-A800-FE100CBBFBF3";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27C5A83113F8A3E800AFB80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI TINGBIN (V5R8UKL5G2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI TINGBIN (V5R8UKL5G2)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Disconnected/videocar-Prefix.pch";
+				INFOPLIST_FILE = "Disconnected/videocar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = videocar;
+				PROVISIONING_PROFILE = "569AB77A-DBB8-490B-A800-FE100CBBFBF3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "569AB77A-DBB8-490B-A800-FE100CBBFBF3";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27C5A80D13F8A3E800AFB80C /* Build configuration list for PBXProject "videocar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C5A82D13F8A3E800AFB80C /* Debug */,
+				27C5A82E13F8A3E800AFB80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C5A82F13F8A3E800AFB80C /* Build configuration list for PBXNativeTarget "videocar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C5A83013F8A3E800AFB80C /* Debug */,
+				27C5A83113F8A3E800AFB80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27C5A80A13F8A3E800AFB80C /* Project object */;
+}
